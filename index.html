@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>解开心结训练营 | 东方奢雅 · 水墨禅意</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* 水墨禅意色彩系统 */
+            --primary-bamboo: #8FBC8F;           /* 竹月青 - 行动号召 */
+            --deep-ink: #1C1C1C;                 /* 浓墨 - 核心标题 */
+            --elegant-gray: #333333;            /* 雅灰 - 正文内容 */
+            --light-gray: #6B7280;              /* 浅灰 - 辅助信息 */
+            --xuan-paper: #F8F6F2;              /* 宣纸白 - 卡片背景 */
+            --rice-white: #FDFBF8;              /* 米汤白 - 页面背景 */
+            --border-subtle: #EAE8E4;           /* 细微边框 */
+            --hover-green: #7FAB7F;             /* 悬停绿色 */
+            --quote-green: #5D9C59;             /* 润青 - 成功确认 */
+            
+            /* 间距系统 (8px网格) */
+            --space-xs: 8px;
+            --space-sm: 16px;
+            --space-md: 32px;
+            --space-lg: 48px;
+            --space-xl: 64px;
+            --space-xxl: 96px;
+            --space-ultimate: 128px;
+            
+            /* 字体系统 (黄金比例 1.618) */
+            --font-size-hero: 61px;
+            --font-size-h2: 38px;
+            --font-size-h3: 24px;
+            --font-size-body: 18px;
+            --font-size-small: 15px;
+            --font-size-quote: 24px;
+            
+            /* 圆角和阴影 */
+            --radius-sm: 4px;
+            --container-max-width: 1100px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: var(--font-size-body);
+            line-height: 1.8;
+            color: var(--elegant-gray);
+            background-color: var(--rice-white);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* 字体类 */
+        .font-serif {
+            font-family: 'Source Serif Pro', serif;
+        }
+        
+        .font-sans {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* 容器 */
+        .container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+        
+        /* 英雄区域 */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--rice-white) 0%, var(--xuan-paper) 100%);
+        }
+        
+        /* 水墨背景效果 */
+        .ink-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(143, 188, 143, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(139, 139, 139, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(143, 188, 143, 0.02) 0%, transparent 30%);
+            animation: inkFlow 20s ease-in-out infinite;
+        }
+        
+        @keyframes inkFlow {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.05) rotate(1deg); }
+        }
+        
+        .hero-content {
+            position: relative;
+            text-align: center;
+            z-index: 2;
+            max-width: 800px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+        
+        .hero-title {
+            font-family: 'Source Serif Pro', serif;
+            font-size: var(--font-size-hero);
+            font-weight: 400;
+            color: var(--deep-ink);
+            line-height: 1.4;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--space-md);
+        }
+        
+        .hero-subtitle {
+            font-family: 'Source Serif Pro', serif;
+            font-size: var(--font-size-quote);
+            font-style: italic;
+            color: var(--quote-green);
+            line-height: 1.6;
+            margin-bottom: var(--space-xl);
+        }
+        
+        .hero-cta {
+            display: inline-block;
+            padding: var(--space-sm) var(--space-md);
+            background-color: var(--primary-bamboo);
+            color: var(--xuan-paper);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: var(--radius-sm);
+            font-size: 18px;
+            transition: all 250ms ease-out;
+            box-shadow: 0 2px 8px rgba(143, 188, 143, 0.2);
+        }
+        
+        .hero-cta:hover {
+            background-color: var(--hover-green);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(143, 188, 143, 0.3);
+        }
+        
+        /* 痛点共鸣区域 */
+        .pain-section {
+            padding: var(--space-ultimate) 0;
+            background-color: var(--rice-white);
+        }
+        
+        .section-title {
+            font-family: 'Source Serif Pro', serif;
+            font-size: var(--font-size-h2);
+            color: var(--deep-ink);
+            text-align: center;
+            margin-bottom: var(--space-xxl);
+            line-height: 1.5;
+        }
+        
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-xl);
+            margin-bottom: var(--space-xxl);
+        }
+        
+        .pain-item {
+            background-color: var(--xuan-paper);
+            padding: var(--space-md);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-sm);
+            transition: border-color 300ms ease;
+        }
+        
+        .pain-item:hover {
+            border-color: var(--primary-bamboo);
+            border-width: 1.5px;
+        }
+        
+        .pain-icon {
+            width: 32px;
+            height: 32px;
+            margin-bottom: var(--space-sm);
+            background-color: var(--primary-bamboo);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--xuan-paper);
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .pain-title {
+            font-size: var(--font-size-h3);
+            font-weight: 600;
+            color: var(--deep-ink);
+            margin-bottom: var(--space-sm);
+            font-family: 'Source Serif Pro', serif;
+        }
+        
+        /* 解决方案区域 */
+        .solution-section {
+            padding: var(--space-ultimate) 0;
+            background-color: var(--xuan-paper);
+        }
+        
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-md);
+        }
+        
+        .solution-card {
+            background-color: var(--rice-white);
+            padding: var(--space-md);
+            border: 1px solid var(--border-subtle);
+            text-align: center;
+            transition: transform 250ms ease, box-shadow 250ms ease;
+        }
+        
+        .solution-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+        }
+        
+        .solution-number {
+            font-family: 'Source Serif Pro', serif;
+            font-size: var(--font-size-h2);
+            color: var(--primary-bamboo);
+            font-weight: 400;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .solution-title {
+            font-size: var(--font-size-h3);
+            font-weight: 600;
+            color: var(--deep-ink);
+            margin-bottom: var(--space-sm);
+            font-family: 'Source Serif Pro', serif;
+        }
+        
+        /* 学员见证区域 */
+        .testimonial-section {
+            padding: var(--space-ultimate) 0;
+            background-color: var(--rice-white);
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-xl);
+        }
+        
+        .testimonial-card {
+            background-color: var(--xuan-paper);
+            padding: var(--space-md);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-sm);
+            position: relative;
+        }
+        
+        .testimonial-quote {
+            font-style: italic;
+            color: var(--elegant-gray);
+            margin-bottom: var(--space-sm);
+            line-height: 1.6;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--deep-ink);
+            font-family: 'Source Serif Pro', serif;
+        }
+        
+        .testimonial-role {
+            color: var(--light-gray);
+            font-size: var(--font-size-small);
+        }
+        
+        /* 保障承诺区域 */
+        .guarantee-section {
+            padding: var(--space-xxl) 0;
+            background-color: var(--xuan-paper);
+            text-align: center;
+        }
+        
+        .guarantee-title {
+            font-family: 'Source Serif Pro', serif;
+            font-size: var(--font-size-h2);
+            color: var(--deep-ink);
+            margin-bottom: var(--space-xl);
+        }
+        
+        .guarantee-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-md);
+            margin-bottom: var(--space-xl);
+        }
+        
+        .guarantee-item {
+            background-color: var(--rice-white);
+            padding: var(--space-sm);
+            border-radius: var(--radius-sm);
+        }
+        
+        .guarantee-icon {
+            font-size: 24px;
+            color: var(--primary-bamboo);
+            margin-bottom: var(--space-xs);
+        }
+        
+        /* 最终CTA区域 */
+        .final-cta {
+            padding: var(--space-ultimate) 0;
+            background: linear-gradient(135deg, var(--primary-bamboo) 0%, var(--quote-green) 100%);
+            color: var(--xuan-paper);
+            text-align: center;
+        }
+        
+        .final-cta .section-title {
+            color: var(--xuan-paper);
+        }
+        
+        .final-cta .hero-subtitle {
+            color: rgba(248, 246, 242, 0.9);
+        }
+        
+        .final-cta-cta {
+            display: inline-block;
+            padding: var(--space-sm) var(--space-xl);
+            background-color: var(--xuan-paper);
+            color: var(--primary-bamboo);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: var(--radius-sm);
+            font-size: 20px;
+            transition: all 250ms ease-out;
+        }
+        
+        .final-cta-cta:hover {
+            background-color: var(--rice-white);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
+        }
+        
+        /* 页面底部 */
+        .footer {
+            padding: var(--space-xl) 0;
+            background-color: var(--deep-ink);
+            color: var(--xuan-paper);
+            text-align: center;
+        }
+        
+        .footer-content {
+            font-size: var(--font-size-small);
+            opacity: 0.8;
+        }
+        
+        /* 动画 */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            :root {
+                --font-size-hero: 42px;
+                --font-size-h2: 32px;
+                --space-ultimate: 96px;
+                --space-xxl: 64px;
+            }
+            
+            .hero {
+                min-height: 60vh;
+            }
+            
+            .hero-content {
+                padding: 0 var(--space-sm);
+            }
+            
+            .container {
+                padding: 0 var(--space-sm);
+            }
+            
+            .pain-grid,
+            .solution-grid,
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .guarantee-items {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* 减少动画的辅助功能 */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="ink-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title font-serif">解开心结训练营</h1>
+                <p class="hero-subtitle font-serif">120分钟，见证内心澄明</p>
+                <a href="#contact" class="hero-cta">预约席位 · 300元/期</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 痛点共鸣区域 -->
+    <section class="pain-section">
+        <div class="container">
+            <h2 class="section-title font-serif">您是否也有这样的困扰？</h2>
+            <div class="pain-grid">
+                <div class="pain-item">
+                    <div class="pain-icon">1</div>
+                    <h3 class="pain-title font-serif">心结难解，反复缠绕</h3>
+                    <p>内心的困扰如同绳结，越想解开越紧。明明知道应该放下，却总在深夜时分被往事惊醒。</p>
+                </div>
+                <div class="pain-item">
+                    <div class="pain-icon">2</div>
+                    <h3 class="pain-title font-serif">情绪反复，身心疲惫</h3>
+                    <p>今天想开了，明天又陷入。情绪如潮水般起伏，身心俱疲，找不到内心的宁静港湾。</p>
+                </div>
+                <div class="pain-item">
+                    <div class="pain-icon">3</div>
+                    <h3 class="pain-title font-serif">缺乏指引，迷茫困顿</h3>
+                    <p>想要改变却不知从何开始，咨询过多人却效果甚微，内心渴望专业的指引与陪伴。</p>
+                </div>
+                <div class="pain-item">
+                    <div class="pain-icon">4</div>
+                    <h3 class="pain-title font-serif">时间紧迫，急需突破</h3>
+                    <p>生活节奏快压力大，亟需快速有效的方法，在有限时间内获得内心的平静与力量。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 解决方案区域 -->
+    <section class="solution-section">
+        <div class="container">
+            <h2 class="section-title font-serif">专业5步流程，循序渐进</h2>
+            <div class="solution-grid">
+                <div class="solution-card">
+                    <div class="solution-number font-serif">一</div>
+                    <h3 class="solution-title font-serif">破冰·初探</h3>
+                    <p>在轻松氛围中建立信任，了解您的内心世界和困扰根源。</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number font-serif">二</div>
+                    <h3 class="solution-title font-serif">问题识别</h3>
+                    <p>精准识别核心心结，分析问题产生的心理机制和模式。</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number font-serif">三</div>
+                    <h3 class="solution-title font-serif">核心服务</h3>
+                    <p>运用秉正心法与转念疗法，现场体验120分钟的深层转化。</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number font-serif">四</div>
+                    <h3 class="solution-title font-serif">效果巩固</h3>
+                    <p>强化转化成果，建立新的思维模式和情感反应机制。</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number font-serif">五</div>
+                    <h3 class="solution-title font-serif">跟进指导</h3>
+                    <p>21天专业陪伴，持续关注您的成长，确保效果持久稳定。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 学员见证区域 -->
+    <section class="testimonial-section">
+        <div class="container">
+            <h2 class="section-title font-serif">学员真实反馈</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"困扰我三年的心结，在120分钟的训练中找到了答案。现在内心前所未有的平静，真的太神奇了。"</p>
+                    <p class="testimonial-author">张女士</p>
+                    <p class="testimonial-role">企业高管，38岁</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"老师的秉正心法太精准了，一针见血地指出我的问题所在。现在面对压力时，能保持内心的稳定。"</p>
+                    <p class="testimonial-author">李先生</p>
+                    <p class="testimonial-role">创业者，32岁</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"21天的陪伴让我感受到了真正的关爱和支持。不仅解决了问题，还学会了如何面对未来的挑战。"</p>
+                    <p class="testimonial-author">王女士</p>
+                    <p class="testimonial-role">教师，28岁</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 保障承诺区域 -->
+    <section class="guarantee-section">
+        <div class="container">
+            <h2 class="guarantee-title font-serif">专业保障，值得信赖</h2>
+            <div class="guarantee-items">
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">✓</div>
+                    <h4 class="font-serif">9年专业经验</h4>
+                    <p>累计服务数千名学员，经验丰富</p>
+                </div>
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">✓</div>
+                    <h4 class="font-serif">21天陪伴服务</h4>
+                    <p>全程专业指导，效果持续巩固</p>
+                </div>
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">✓</div>
+                    <h4 class="font-serif">小班制教学</h4>
+                    <p>每期限10人，确保个性化关注</p>
+                </div>
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">✓</div>
+                    <h4 class="font-serif">不满意退费</h4>
+                    <p>100%保障您的权益</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最终CTA区域 -->
+    <section class="final-cta">
+        <div class="container">
+            <h2 class="section-title font-serif">现在开始您的内心转化之旅</h2>
+            <p class="hero-subtitle font-serif">只需300元，为内心投资一次深度觉醒的机会</p>
+            <a href="#contact" class="final-cta-cta">立即预约 · 解开心结</a>
+        </div>
+    </section>
+
+    <!-- 页面底部 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>解开心结训练营 · 专业心理陪伴服务</p>
+                <p>© 2025 秉正心法·转念疗法 | 9年专业经验，值得信赖</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 滚动时的微妙水墨背景效果
+        let ticking = false;
+        function updateInkBackground() {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.3;
+            const inkBackground = document.querySelector('.ink-background');
+            if (inkBackground) {
+                inkBackground.style.transform = `translateY(${rate}px)`;
+            }
+            ticking = false;
+        }
+
+        function requestTick() {
+            if (!ticking) {
+                requestAnimationFrame(updateInkBackground);
+                ticking = true;
+            }
+        }
+
+        window.addEventListener('scroll', requestTick);
+
+        // 页面加载完成后的淡入动画
+        document.addEventListener('DOMContentLoaded', function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            // 观察所有需要动画的元素
+            document.querySelectorAll('.pain-item, .solution-card, .testimonial-card').forEach((el) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 600ms ease, transform 600ms ease';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>

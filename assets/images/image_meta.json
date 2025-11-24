@@ -1,0 +1,407 @@
+[
+  {
+    "query": "专业心理咨询环境，展现温暖专业的氛围",
+    "image_info": {
+      "url": "https://images.everydayhealth.com/images/senior-health/gestalt_hero.png?sfvrsn=9c7f82eb_5",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 78690,
+      "width": 1440,
+      "height": 810,
+      "total_pixels": 1166400,
+      "basic_score": 0.9363672282498015,
+      "file_name": "therapy_session_9.png"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "专业心理咨询环境，展现温暖专业的氛围",
+    "image_info": {
+      "url": "https://www.talkspace.com/blog/wp-content/uploads/2020/11/what-is-talk-therapy_1200W-800x500.png",
+      "img_format": "PNG",
+      "mode": "RGB",
+      "file_size": 662573,
+      "width": 800,
+      "height": 500,
+      "total_pixels": 400000,
+      "basic_score": 0.8606227567672902,
+      "file_name": "therapy_session_5.png"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "专业心理咨询环境，展现温暖专业的氛围",
+    "image_info": {
+      "url": "https://dam.northwell.edu/m/5fc57a74ba6b64ac/Drupal-NEWS_young-woman-therapy-session.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 168232,
+      "width": 1546,
+      "height": 1056,
+      "total_pixels": 1632576,
+      "basic_score": 0.8501591785467217,
+      "file_name": "therapy_session_7.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "象征心结解开、内心重生的积极场景",
+    "image_info": {
+      "url": "https://m.media-amazon.com/images/I/818wioGlgXL._AC_UF1000,1000_QL80_.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 118779,
+      "width": 667,
+      "height": 1000,
+      "total_pixels": 667000,
+      "basic_score": 0.8847230628422494,
+      "file_name": "heart_healing_1.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "象征心结解开、内心重生的积极场景",
+    "image_info": {
+      "url": "https://m.media-amazon.com/images/I/61yUqT-inaL._AC_UF1000,1000_QL80_.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 61400,
+      "width": 667,
+      "height": 1000,
+      "total_pixels": 667000,
+      "basic_score": 0.8785700687945422,
+      "file_name": "heart_healing_2.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "象征心结解开、内心重生的积极场景",
+    "image_info": {
+      "url": "https://m.media-amazon.com/images/I/61BvLK8OJlL._AC_UF1000,1000_QL80_.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 53859,
+      "width": 667,
+      "height": 1000,
+      "total_pixels": 667000,
+      "basic_score": 0.8777392184895423,
+      "file_name": "heart_healing_0.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "一张宁静的冥想场景，展现心理健康和内心平静",
+    "image_info": {
+      "url": "http://thezencrystals.com/cdn/shop/articles/untitled-design-19-1686847284878.png?v=1686848877",
+      "img_format": "PNG",
+      "mode": "RGBA",
+      "file_size": 596418,
+      "width": 1100,
+      "height": 550,
+      "total_pixels": 605000,
+      "basic_score": 0.898111195527237,
+      "file_name": "meditation_peace_8.png"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "一张宁静的冥想场景，展现心理健康和内心平静",
+    "image_info": {
+      "url": "https://thumbs.dreamstime.com/b/yoga-meditation-peace-zen-woman-meditate-spiritual-mental-health-chakra-energy-balance-soul-aura-healing-home-pilates-355214419.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 55201,
+      "width": 599,
+      "height": 900,
+      "total_pixels": 539100,
+      "basic_score": 0.8544101042689719,
+      "file_name": "meditation_peace_2.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "一张宁静的冥想场景，展现心理健康和内心平静",
+    "image_info": {
+      "url": "https://thumbs.dreamstime.com/b/yoga-meditation-peace-zen-woman-meditate-spiritual-mental-health-chakra-energy-balance-soul-aura-healing-yoga-267395565.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 64869,
+      "width": 575,
+      "height": 900,
+      "total_pixels": 517500,
+      "basic_score": 0.8495696468173122,
+      "file_name": "meditation_peace_1.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "中式禅意花园，体现东方美学",
+    "image_info": {
+      "url": "https://ops.decorativeaggregates.com/files/img_cache/2039/1210_803___1Japanese%20Zen%20Gravel%20Garden.jpg?1618390441",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 314589,
+      "width": 1210,
+      "height": 803,
+      "total_pixels": 971630,
+      "basic_score": 0.9522829119501949,
+      "file_name": "zen_garden_5.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "中式禅意花园，体现东方美学",
+    "image_info": {
+      "url": "https://i.pinimg.com/736x/56/63/36/5663362814658a7e18dd381ad90b59b2.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 277171,
+      "width": 720,
+      "height": 1280,
+      "total_pixels": 921600,
+      "basic_score": 0.9088770630131832,
+      "file_name": "zen_garden_3.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "中式禅意花园，体现东方美学",
+    "image_info": {
+      "url": "https://www.gardendesign.com/pictures/images/900x705Max/site_3/zen-garden-japanese-garden-raked-gravel-garden-shutterstock-com_15666.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 167543,
+      "width": 900,
+      "height": 600,
+      "total_pixels": 540000,
+      "basic_score": 0.8751363961536746,
+      "file_name": "zen_garden_0.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "展现转变过程的励志对比图",
+    "image_info": {
+      "url": "https://static.boredpanda.com/blog/wp-content/uploads/2017/05/591c679228648.png",
+      "img_format": "PNG",
+      "mode": "RGB",
+      "file_size": 762480,
+      "width": 1200,
+      "height": 630,
+      "total_pixels": 756000,
+      "basic_score": 0.936978180238436,
+      "file_name": "transformation_7.png"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "展现转变过程的励志对比图",
+    "image_info": {
+      "url": "https://i0.wp.com/thecutgym.com/wp-content/uploads/2024/06/male-body-transformation-london-1-1.webp?fit=1000%2C700&ssl=1",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 91203,
+      "width": 1000,
+      "height": 700,
+      "total_pixels": 700000,
+      "basic_score": 0.9010358875025993,
+      "file_name": "transformation_1.webp"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "展现转变过程的励志对比图",
+    "image_info": {
+      "url": "https://i.ytimg.com/vi/QCsTePzFzzI/sddefault.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 41704,
+      "width": 640,
+      "height": 480,
+      "total_pixels": 307200,
+      "basic_score": 0.7897315822551317,
+      "file_name": "transformation_2.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "心理咨询师与客户对话的专业场景",
+    "image_info": {
+      "url": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/02/Therapist-explaining-male-patient-during-session-1296x728-header.jpg?w=1155&h=1528",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 132036,
+      "width": 1155,
+      "height": 648,
+      "total_pixels": 748440,
+      "basic_score": 0.9138243974238803,
+      "file_name": "counselor_session_2.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "心理咨询师与客户对话的专业场景",
+    "image_info": {
+      "url": "https://careersinpsychology.org/wp-content/uploads/2012/04/counseling-psychologist-therapy-session-client.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 143528,
+      "width": 1200,
+      "height": 628,
+      "total_pixels": 753600,
+      "basic_score": 0.9102254104099475,
+      "file_name": "counselor_session_9.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "心理咨询师与客户对话的专业场景",
+    "image_info": {
+      "url": "https://i0.wp.com/journeyofhopeandcourage.com/wp-content/uploads/2023/10/10-Benefits-of-Therapy-and-Why-You-Should-See-a-Counselor-counselor-therapist-counseling-therapy-mental-health-professional-mental-health-treatment-couple-counseling-guidance-support.jpg?resize=1024%2C665&ssl=1",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 206010,
+      "width": 1024,
+      "height": 665,
+      "total_pixels": 680960,
+      "basic_score": 0.9098651935115506,
+      "file_name": "counselor_session_7.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "展现人内心创伤到治愈过程的心理健康概念图",
+    "image_info": {
+      "url": "https://desertcoverecovery.com/wp-content/uploads/2024/06/4-The-Impact-of-Trauma-on-Addiction-Healing-Wounds-to-Break-the-Cycle.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 158022,
+      "width": 1000,
+      "height": 1000,
+      "total_pixels": 1000000,
+      "basic_score": 0.9325236437738588,
+      "file_name": "healing_journey_6.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "展现人内心创伤到治愈过程的心理健康概念图",
+    "image_info": {
+      "url": "https://www.evolvedmd.com/wp-content/uploads/The-Key-Principles-of-Trauma-Informed-Care.webp",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 99802,
+      "width": 1080,
+      "height": 1080,
+      "total_pixels": 1166400,
+      "basic_score": 0.930229205073804,
+      "file_name": "healing_journey_5.webp"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "展现人内心创伤到治愈过程的心理健康概念图",
+    "image_info": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5fa99678be434059a8d6d389/1615399231236-8RCPZX7D2LVM294EXOA6/stages-of-trauma-healing",
+      "img_format": "PNG",
+      "mode": "RGBA",
+      "file_size": 92150,
+      "width": 1080,
+      "height": 1080,
+      "total_pixels": 1166400,
+      "basic_score": 0.9094930855481205,
+      "file_name": "healing_journey_1.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "东方禅意花园，体现宁静与平和",
+    "image_info": {
+      "url": "https://www.prettypurpledoor.com/wp-content/uploads/meditation-garden-tips-deposit_featuredstretch.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 131275,
+      "width": 1200,
+      "height": 750,
+      "total_pixels": 900000,
+      "basic_score": 0.9297289013624354,
+      "file_name": "zen_nature_6.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "东方禅意花园，体现宁静与平和",
+    "image_info": {
+      "url": "https://www.sonomamag.com/wp-content/uploads/2016/08/zen-1-1.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 403192,
+      "width": 1010,
+      "height": 643,
+      "total_pixels": 649430,
+      "basic_score": 0.9190623315605242,
+      "file_name": "zen_nature_7.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "东方禅意花园，体现宁静与平和",
+    "image_info": {
+      "url": "https://soltech.com/cdn/shop/articles/image2_2000x.png?v=1701717894",
+      "img_format": "PNG",
+      "mode": "RGBA",
+      "file_size": 1104866,
+      "width": 600,
+      "height": 800,
+      "total_pixels": 480000,
+      "basic_score": 0.8766395088501715,
+      "file_name": "zen_nature_9.png"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "展现积极改变和成长的励志场景",
+    "image_info": {
+      "url": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/blogs/34353/images/yRPlAs8pT46TIWXZoKJu_The_4_Key_Success_Factors_That_Influence_Personal_Growth_pdf_page_2_of_3_.png",
+      "img_format": "PNG",
+      "mode": "RGB",
+      "file_size": 348946,
+      "width": 1280,
+      "height": 720,
+      "total_pixels": 921600,
+      "basic_score": 0.9413871028095868,
+      "file_name": "personal_growth_5.png"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "展现积极改变和成长的励志场景",
+    "image_info": {
+      "url": "https://mentalhealthinc.com/wp-content/uploads/2023/09/MWC-blogs-1.png",
+      "img_format": "PNG",
+      "mode": "RGBA",
+      "file_size": 672597,
+      "width": 1200,
+      "height": 628,
+      "total_pixels": 753600,
+      "basic_score": 0.934604240438234,
+      "file_name": "personal_growth_4.png"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "展现积极改变和成长的励志场景",
+    "image_info": {
+      "url": "https://thepleasantmind.com/wp-content/uploads/2019/10/What-is-Personal-Growth-and-How-to-Accelerate-it-1024x1024.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 148561,
+      "width": 1024,
+      "height": 1024,
+      "total_pixels": 1048576,
+      "basic_score": 0.9312310772837654,
+      "file_name": "personal_growth_6.jpg"
+    },
+    "llm_score": null
+  }
+]
