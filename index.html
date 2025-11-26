@@ -4,43 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>解开心结训练营 | 东方奢雅 · 水墨禅意</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     
     <style>
+        /* 水墨禅意色彩系统 - 硬编码确保兼容性 */
         :root {
-            /* 水墨禅意色彩系统 */
-            --primary-bamboo: #8FBC8F;           /* 竹月青 - 行动号召 */
-            --deep-ink: #1C1C1C;                 /* 浓墨 - 核心标题 */
-            --elegant-gray: #333333;            /* 雅灰 - 正文内容 */
-            --light-gray: #6B7280;              /* 浅灰 - 辅助信息 */
-            --xuan-paper: #F8F6F2;              /* 宣纸白 - 卡片背景 */
-            --rice-white: #FDFBF8;              /* 米汤白 - 页面背景 */
-            --border-subtle: #EAE8E4;           /* 细微边框 */
-            --hover-green: #7FAB7F;             /* 悬停绿色 */
-            --quote-green: #5D9C59;             /* 润青 - 成功确认 */
-            
-            /* 间距系统 (8px网格) */
-            --space-xs: 8px;
-            --space-sm: 16px;
-            --space-md: 32px;
-            --space-lg: 48px;
-            --space-xl: 64px;
-            --space-xxl: 96px;
-            --space-ultimate: 128px;
-            
-            /* 字体系统 (黄金比例 1.618) */
-            --font-size-hero: 61px;
-            --font-size-h2: 38px;
-            --font-size-h3: 24px;
-            --font-size-body: 18px;
-            --font-size-small: 15px;
-            --font-size-quote: 24px;
-            
-            /* 圆角和阴影 */
-            --radius-sm: 4px;
-            --container-max-width: 1100px;
+            --primary-bamboo: #8FBC8F;
+            --deep-ink: #1C1C1C;
+            --elegant-gray: #333333;
+            --light-gray: #6B7280;
+            --xuan-paper: #F8F6F2;
+            --rice-white: #FDFBF8;
+            --border-subtle: #EAE8E4;
+            --hover-green: #7FAB7F;
+            --quote-green: #5D9C59;
         }
         
         * {
@@ -50,29 +26,30 @@
         }
         
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            font-size: var(--font-size-body);
+            /* 使用系统字体，确保GitHub Pages兼容性 */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 18px;
             line-height: 1.8;
-            color: var(--elegant-gray);
-            background-color: var(--rice-white);
+            color: var(--elegant-gray, #333333);
+            background-color: var(--rice-white, #FDFBF8);
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
         
         /* 字体类 */
         .font-serif {
-            font-family: 'Source Serif Pro', serif;
+            font-family: Georgia, "Times New Roman", Times, serif;
         }
         
         .font-sans {
-            font-family: 'Inter', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         }
         
         /* 容器 */
         .container {
-            max-width: var(--container-max-width);
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 0 var(--space-md);
+            padding: 0 32px;
         }
         
         /* 英雄区域 */
@@ -83,7 +60,7 @@
             align-items: center;
             justify-content: center;
             overflow: hidden;
-            background: linear-gradient(135deg, var(--rice-white) 0%, var(--xuan-paper) 100%);
+            background: linear-gradient(135deg, var(--rice-white, #FDFBF8) 0%, var(--xuan-paper, #F8F6F2) 100%);
         }
         
         /* 水墨背景效果 */
@@ -114,116 +91,149 @@
         }
         
         .hero-title {
-            font-family: 'Source Serif Pro', serif;
-            font-size: var(--font-size-hero);
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 61px;
             font-weight: 400;
-            color: var(--deep-ink);
+            color: var(--deep-ink, #1C1C1C);
             line-height: 1.4;
             letter-spacing: -0.02em;
-            margin-bottom: var(--space-md);
+            margin-bottom: 32px;
         }
         
         .hero-subtitle {
-            font-family: 'Source Serif Pro', serif;
-            font-size: var(--font-size-quote);
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 24px;
             font-style: italic;
-            color: var(--quote-green);
+            color: var(--quote-green, #5D9C59);
             line-height: 1.6;
-            margin-bottom: var(--space-xl);
+            margin-bottom: 64px;
         }
         
         .hero-cta {
             display: inline-block;
-            padding: var(--space-sm) var(--space-md);
-            background-color: var(--primary-bamboo);
-            color: var(--xuan-paper);
+            padding: 16px 32px;
+            background-color: var(--primary-bamboo, #8FBC8F);
+            color: var(--xuan-paper, #F8F6F2);
             text-decoration: none;
             font-weight: 600;
-            border-radius: var(--radius-sm);
+            border-radius: 4px;
             font-size: 18px;
             transition: all 250ms ease-out;
             box-shadow: 0 2px 8px rgba(143, 188, 143, 0.2);
         }
         
         .hero-cta:hover {
-            background-color: var(--hover-green);
+            background-color: var(--hover-green, #7FAB7F);
             transform: translateY(-2px);
             box-shadow: 0 4px 16px rgba(143, 188, 143, 0.3);
         }
         
+        /* 联系区域 */
+        .contact-section {
+            padding: 96px 0;
+            background-color: var(--xuan-paper, #F8F6F2);
+            text-align: center;
+        }
+        
+        .contact-title {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 38px;
+            color: var(--deep-ink, #1C1C1C);
+            margin-bottom: 48px;
+        }
+        
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            margin-bottom: 48px;
+        }
+        
+        .contact-item {
+            background-color: var(--rice-white, #FDFBF8);
+            padding: 24px;
+            border: 1px solid var(--border-subtle, #EAE8E4);
+            border-radius: 4px;
+        }
+        
+        .contact-icon {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        
         /* 痛点共鸣区域 */
         .pain-section {
-            padding: var(--space-ultimate) 0;
-            background-color: var(--rice-white);
+            padding: 128px 0;
+            background-color: var(--rice-white, #FDFBF8);
         }
         
         .section-title {
-            font-family: 'Source Serif Pro', serif;
-            font-size: var(--font-size-h2);
-            color: var(--deep-ink);
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 38px;
+            color: var(--deep-ink, #1C1C1C);
             text-align: center;
-            margin-bottom: var(--space-xxl);
+            margin-bottom: 96px;
             line-height: 1.5;
         }
         
         .pain-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--space-xl);
-            margin-bottom: var(--space-xxl);
+            gap: 48px;
+            margin-bottom: 96px;
         }
         
         .pain-item {
-            background-color: var(--xuan-paper);
-            padding: var(--space-md);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-sm);
+            background-color: var(--xuan-paper, #F8F6F2);
+            padding: 32px;
+            border: 1px solid var(--border-subtle, #EAE8E4);
+            border-radius: 4px;
             transition: border-color 300ms ease;
         }
         
         .pain-item:hover {
-            border-color: var(--primary-bamboo);
+            border-color: var(--primary-bamboo, #8FBC8F);
             border-width: 1.5px;
         }
         
         .pain-icon {
             width: 32px;
             height: 32px;
-            margin-bottom: var(--space-sm);
-            background-color: var(--primary-bamboo);
+            margin-bottom: 16px;
+            background-color: var(--primary-bamboo, #8FBC8F);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--xuan-paper);
+            color: var(--xuan-paper, #F8F6F2);
             font-weight: bold;
             font-size: 16px;
         }
         
         .pain-title {
-            font-size: var(--font-size-h3);
+            font-size: 24px;
             font-weight: 600;
-            color: var(--deep-ink);
-            margin-bottom: var(--space-sm);
-            font-family: 'Source Serif Pro', serif;
+            color: var(--deep-ink, #1C1C1C);
+            margin-bottom: 16px;
+            font-family: Georgia, "Times New Roman", Times, serif;
         }
         
         /* 解决方案区域 */
         .solution-section {
-            padding: var(--space-ultimate) 0;
-            background-color: var(--xuan-paper);
+            padding: 128px 0;
+            background-color: var(--xuan-paper, #F8F6F2);
         }
         
         .solution-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--space-md);
+            gap: 32px;
         }
         
         .solution-card {
-            background-color: var(--rice-white);
-            padding: var(--space-md);
-            border: 1px solid var(--border-subtle);
+            background-color: var(--rice-white, #FDFBF8);
+            padding: 32px;
+            border: 1px solid var(--border-subtle, #EAE8E4);
             text-align: center;
             transition: transform 250ms ease, box-shadow 250ms ease;
         }
@@ -234,102 +244,102 @@
         }
         
         .solution-number {
-            font-family: 'Source Serif Pro', serif;
-            font-size: var(--font-size-h2);
-            color: var(--primary-bamboo);
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 38px;
+            color: var(--primary-bamboo, #8FBC8F);
             font-weight: 400;
-            margin-bottom: var(--space-sm);
+            margin-bottom: 16px;
         }
         
         .solution-title {
-            font-size: var(--font-size-h3);
+            font-size: 24px;
             font-weight: 600;
-            color: var(--deep-ink);
-            margin-bottom: var(--space-sm);
-            font-family: 'Source Serif Pro', serif;
+            color: var(--deep-ink, #1C1C1C);
+            margin-bottom: 16px;
+            font-family: Georgia, "Times New Roman", Times, serif;
         }
         
         /* 学员见证区域 */
         .testimonial-section {
-            padding: var(--space-ultimate) 0;
-            background-color: var(--rice-white);
+            padding: 128px 0;
+            background-color: var(--rice-white, #FDFBF8);
         }
         
         .testimonial-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: var(--space-xl);
+            gap: 48px;
         }
         
         .testimonial-card {
-            background-color: var(--xuan-paper);
-            padding: var(--space-md);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-sm);
+            background-color: var(--xuan-paper, #F8F6F2);
+            padding: 32px;
+            border: 1px solid var(--border-subtle, #EAE8E4);
+            border-radius: 4px;
             position: relative;
         }
         
         .testimonial-quote {
             font-style: italic;
-            color: var(--elegant-gray);
-            margin-bottom: var(--space-sm);
+            color: var(--elegant-gray, #333333);
+            margin-bottom: 16px;
             line-height: 1.6;
         }
         
         .testimonial-author {
             font-weight: 600;
-            color: var(--deep-ink);
-            font-family: 'Source Serif Pro', serif;
+            color: var(--deep-ink, #1C1C1C);
+            font-family: Georgia, "Times New Roman", Times, serif;
         }
         
         .testimonial-role {
-            color: var(--light-gray);
-            font-size: var(--font-size-small);
+            color: var(--light-gray, #6B7280);
+            font-size: 15px;
         }
         
         /* 保障承诺区域 */
         .guarantee-section {
-            padding: var(--space-xxl) 0;
-            background-color: var(--xuan-paper);
+            padding: 64px 0;
+            background-color: var(--xuan-paper, #F8F6F2);
             text-align: center;
         }
         
         .guarantee-title {
-            font-family: 'Source Serif Pro', serif;
-            font-size: var(--font-size-h2);
-            color: var(--deep-ink);
-            margin-bottom: var(--space-xl);
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 38px;
+            color: var(--deep-ink, #1C1C1C);
+            margin-bottom: 64px;
         }
         
         .guarantee-items {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: var(--space-md);
-            margin-bottom: var(--space-xl);
+            gap: 32px;
+            margin-bottom: 64px;
         }
         
         .guarantee-item {
-            background-color: var(--rice-white);
-            padding: var(--space-sm);
-            border-radius: var(--radius-sm);
+            background-color: var(--rice-white, #FDFBF8);
+            padding: 16px;
+            border-radius: 4px;
         }
         
         .guarantee-icon {
             font-size: 24px;
-            color: var(--primary-bamboo);
-            margin-bottom: var(--space-xs);
+            color: var(--primary-bamboo, #8FBC8F);
+            margin-bottom: 8px;
         }
         
         /* 最终CTA区域 */
         .final-cta {
-            padding: var(--space-ultimate) 0;
-            background: linear-gradient(135deg, var(--primary-bamboo) 0%, var(--quote-green) 100%);
-            color: var(--xuan-paper);
+            padding: 128px 0;
+            background: linear-gradient(135deg, var(--primary-bamboo, #8FBC8F) 0%, var(--quote-green, #5D9C59) 100%);
+            color: var(--xuan-paper, #F8F6F2);
             text-align: center;
         }
         
         .final-cta .section-title {
-            color: var(--xuan-paper);
+            color: var(--xuan-paper, #F8F6F2);
         }
         
         .final-cta .hero-subtitle {
@@ -338,32 +348,32 @@
         
         .final-cta-cta {
             display: inline-block;
-            padding: var(--space-sm) var(--space-xl);
-            background-color: var(--xuan-paper);
-            color: var(--primary-bamboo);
+            padding: 16px 64px;
+            background-color: var(--xuan-paper, #F8F6F2);
+            color: var(--primary-bamboo, #8FBC8F);
             text-decoration: none;
             font-weight: 600;
-            border-radius: var(--radius-sm);
+            border-radius: 4px;
             font-size: 20px;
             transition: all 250ms ease-out;
         }
         
         .final-cta-cta:hover {
-            background-color: var(--rice-white);
+            background-color: var(--rice-white, #FDFBF8);
             transform: translateY(-2px);
             box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
         }
         
         /* 页面底部 */
         .footer {
-            padding: var(--space-xl) 0;
-            background-color: var(--deep-ink);
-            color: var(--xuan-paper);
+            padding: 64px 0;
+            background-color: var(--deep-ink, #1C1C1C);
+            color: var(--xuan-paper, #F8F6F2);
             text-align: center;
         }
         
         .footer-content {
-            font-size: var(--font-size-small);
+            font-size: 15px;
             opacity: 0.8;
         }
         
@@ -381,11 +391,12 @@
         
         /* 响应式设计 */
         @media (max-width: 768px) {
-            :root {
-                --font-size-hero: 42px;
-                --font-size-h2: 32px;
-                --space-ultimate: 96px;
-                --space-xxl: 64px;
+            .hero-title {
+                font-size: 42px;
+            }
+            
+            .section-title {
+                font-size: 32px;
             }
             
             .hero {
@@ -393,11 +404,11 @@
             }
             
             .hero-content {
-                padding: 0 var(--space-sm);
+                padding: 0 16px;
             }
             
             .container {
-                padding: 0 var(--space-sm);
+                padding: 0 16px;
             }
             
             .pain-grid,
@@ -407,6 +418,10 @@
             }
             
             .guarantee-items {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-methods {
                 grid-template-columns: 1fr;
             }
         }
@@ -430,6 +445,30 @@
                 <h1 class="hero-title font-serif">解开心结训练营</h1>
                 <p class="hero-subtitle font-serif">120分钟，见证内心澄明</p>
                 <a href="#contact" class="hero-cta">预约席位 · 300元/期</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系区域 -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="contact-title font-serif">立即预约</h2>
+            <div class="contact-methods">
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <h4>电话咨询</h4>
+                    <p>400-8888-8888<br>工作日 9:00-18:00</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💬</div>
+                    <h4>微信咨询</h4>
+                    <p>扫码添加客服<br>获取专属优惠</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h4>邮件咨询</h4>
+                    <p>service@xinlingcamp.com<br>24小时内回复</p>
+                </div>
             </div>
         </div>
     </section>
